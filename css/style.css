@@ -549,3 +549,9 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
   .process-icon{width:46px;height:46px;border-radius:14px}
   .category-icon{width:24px;height:24px;font-size:11px}
 }
+
+/* Rotating dolly photos (home category card) */
+.dolly-rotator{position:relative}
+.category-photo.dolly-rotator img{position:absolute;inset:10px;width:calc(100% - 20px);height:calc(100% - 20px);opacity:0;transition:opacity .9s ease}
+.category-photo.dolly-rotator img.is-active{opacity:1}
+@media (prefers-reduced-motion:reduce){.category-photo.dolly-rotator img{transition:none}}
